@@ -1,6 +1,6 @@
 import { defineStore } from 'pinia';
 import { nanoid } from 'nanoid';
-import browser from 'webextension-polyfill';
+import browser from '@/lib/browser-compat';
 
 export const useFolderStore = defineStore('folder', {
   storageMap: {

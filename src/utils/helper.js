@@ -1,5 +1,5 @@
 import BrowserAPIService from '@/service/browser-api/BrowserAPIService';
-import browser from 'webextension-polyfill';
+import browser from '@/lib/browser-compat';
 
 export async function getActiveTab() {
   try {

@@ -190,7 +190,7 @@ import {
   shallowReactive,
   watch,
 } from 'vue';
-import browser from 'webextension-polyfill';
+import browser from '@/lib/browser-compat';
 
 const paramsList = {
   string: {

@@ -1,7 +1,7 @@
 import BrowserAPIService from '@/service/browser-api/BrowserAPIService';
 import { MessageListener } from '@/utils/message';
 import { customAlphabet } from 'nanoid/non-secure';
-import browser from 'webextension-polyfill';
+import browser from '@/lib/browser-compat';
 
 export function escapeElementPolicy(script) {
   if (window?.trustedTypes?.createPolicy) {

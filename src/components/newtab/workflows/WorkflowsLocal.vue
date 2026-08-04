@@ -114,7 +114,7 @@ import {
 } from 'vue';
 import { useI18n } from 'vue-i18n';
 import SelectionArea from '@viselect/vanilla';
-import browser from 'webextension-polyfill';
+import browser from '@/lib/browser-compat';
 import cloneDeep from 'lodash.clonedeep';
 import { arraySorter } from '@/utils/helper';
 import { useUserStore } from '@/stores/user';

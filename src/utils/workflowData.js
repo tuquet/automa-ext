@@ -1,4 +1,4 @@
-import browser from 'webextension-polyfill';
+import browser from '@/lib/browser-compat';
 import { useWorkflowStore } from '@/stores/workflow';
 import { registerWorkflowTrigger } from './workflowTrigger';
 import {

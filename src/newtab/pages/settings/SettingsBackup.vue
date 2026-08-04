@@ -222,7 +222,7 @@ import dayjs from 'dayjs';
 import { onMounted, reactive, toRaw } from 'vue';
 import { useI18n } from 'vue-i18n';
 import { useToast } from 'vue-toastification';
-import browser from 'webextension-polyfill';
+import browser from '@/lib/browser-compat';
 
 const BACKUP_SCHEDULES = {
   '0 8 * * *': 'Every day',

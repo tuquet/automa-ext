@@ -32,7 +32,7 @@
 <script setup>
 import dayjs from '@/lib/dayjs';
 import { computed, onMounted, shallowReactive } from 'vue';
-import browser from 'webextension-polyfill';
+import browser from '@/lib/browser-compat';
 
 const modalTypes = {
   testimonial: {

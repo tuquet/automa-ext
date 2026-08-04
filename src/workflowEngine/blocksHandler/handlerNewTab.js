@@ -1,6 +1,6 @@
 import BrowserAPIService from '@/service/browser-api/BrowserAPIService';
 import { isWhitespace, sleep } from '@/utils/helper';
-import Browser from 'webextension-polyfill';
+import Browser from '@/lib/browser-compat';
 import {
   attachDebugger,
   injectPreloadScript,

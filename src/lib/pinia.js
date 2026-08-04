@@ -1,5 +1,5 @@
 import { createPinia } from 'pinia';
-import browser from 'webextension-polyfill';
+import browser from '@/lib/browser-compat';
 
 function saveToStoragePlugin({ store, options }) {
   store.saveToStorage = (key) => {

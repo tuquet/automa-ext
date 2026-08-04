@@ -1,4 +1,4 @@
-import browser from 'webextension-polyfill';
+import browser from '@/lib/browser-compat';
 import dbLogs from '@/db/logs';
 
 export default async function () {

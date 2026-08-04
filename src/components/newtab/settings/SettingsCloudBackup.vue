@@ -154,7 +154,7 @@
 import { computed, reactive, onMounted } from 'vue';
 import { useI18n } from 'vue-i18n';
 import { useToast } from 'vue-toastification';
-import browser from 'webextension-polyfill';
+import browser from '@/lib/browser-compat';
 import { fetchApi, cacheApi } from '@/utils/api';
 import { convertWorkflow } from '@/utils/workflowData';
 import { parseJSON } from '@/utils/helper';

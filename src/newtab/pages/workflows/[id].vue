@@ -359,7 +359,7 @@ import {
 import { useI18n } from 'vue-i18n';
 import { onBeforeRouteLeave, useRoute, useRouter } from 'vue-router';
 import { useToast } from 'vue-toastification';
-import browser from 'webextension-polyfill';
+import browser from '@/lib/browser-compat';
 
 const blocks = getBlocks();
 

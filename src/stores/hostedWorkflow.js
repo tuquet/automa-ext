@@ -1,5 +1,5 @@
 import { defineStore } from 'pinia';
-import browser from 'webextension-polyfill';
+import browser from '@/lib/browser-compat';
 import { fetchApi } from '@/utils/api';
 import {
   registerWorkflowTrigger,

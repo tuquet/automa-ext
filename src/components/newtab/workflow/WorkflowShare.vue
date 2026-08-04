@@ -97,7 +97,7 @@ import { convertWorkflow } from '@/utils/workflowData';
 import { onMounted, reactive, watch } from 'vue';
 import { useI18n } from 'vue-i18n';
 import { useToast } from 'vue-toastification';
-import browser from 'webextension-polyfill';
+import browser from '@/lib/browser-compat';
 
 const props = defineProps({
   workflow: {

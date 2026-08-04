@@ -125,7 +125,7 @@ import { useI18n } from 'vue-i18n';
 import { nanoid } from 'nanoid';
 import dayjs from 'dayjs';
 import cloneDeep from 'lodash.clonedeep';
-import browser from 'webextension-polyfill';
+import browser from '@/lib/browser-compat';
 import { useUserStore } from '@/stores/user';
 import { useWorkflowStore } from '@/stores/workflow';
 import { useTeamWorkflowStore } from '@/stores/teamWorkflow';

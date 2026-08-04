@@ -55,7 +55,7 @@ import { useI18n } from 'vue-i18n';
 import { useRouter } from 'vue-router';
 import { nanoid } from 'nanoid';
 import defu from 'defu';
-import browser from 'webextension-polyfill';
+import browser from '@/lib/browser-compat';
 import { tasks } from '@/utils/shared';
 import { useWorkflowStore } from '@/stores/workflow';
 import RecordWorkflowUtils from '@/newtab/utils/RecordWorkflowUtils';

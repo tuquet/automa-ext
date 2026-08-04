@@ -1,4 +1,4 @@
-import browser from 'webextension-polyfill';
+import browser from '@/lib/browser-compat';
 
 export function generateStyleEl(css, classes = true) {
   const style = document.createElement('style');

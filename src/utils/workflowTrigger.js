@@ -1,6 +1,6 @@
 import cronParser from 'cron-parser';
 import dayjs from 'dayjs';
-import browser from 'webextension-polyfill';
+import browser from '@/lib/browser-compat';
 import { isObject } from './helper';
 
 export function registerContextMenu(triggerId, data) {

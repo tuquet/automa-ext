@@ -105,7 +105,7 @@ import { computed, onMounted, reactive } from 'vue';
 import { useI18n } from 'vue-i18n';
 import { useRouter } from 'vue-router';
 import { useToast } from 'vue-toastification';
-import browser from 'webextension-polyfill';
+import browser from '@/lib/browser-compat';
 
 const props = defineProps({
   isDataChanged: {

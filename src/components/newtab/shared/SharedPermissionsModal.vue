@@ -34,7 +34,7 @@
 <script setup>
 import { toRaw } from 'vue';
 import { useI18n } from 'vue-i18n';
-import browser from 'webextension-polyfill';
+import browser from '@/lib/browser-compat';
 
 const props = defineProps({
   permissions: {

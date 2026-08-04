@@ -1,5 +1,5 @@
 import { IS_FIREFOX } from '@/common/utils/constant';
-import browser from 'webextension-polyfill';
+import browser from '@/lib/browser-compat';
 import BackgroundOffscreen from './BackgroundOffscreen';
 
 class BackgroundWorkflowUtils {

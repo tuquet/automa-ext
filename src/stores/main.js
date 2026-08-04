@@ -1,6 +1,6 @@
 import { defineStore } from 'pinia';
 import defu from 'defu';
-import browser from 'webextension-polyfill';
+import browser from '@/lib/browser-compat';
 import deepmerge from 'lodash.merge';
 import { fetchGapi, fetchApi } from '@/utils/api';
 

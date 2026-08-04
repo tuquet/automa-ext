@@ -1,4 +1,4 @@
-import browser from 'webextension-polyfill';
+import browser from '@/lib/browser-compat';
 
 const isMV2 = browser.runtime.getManifest().manifest_version === 2;
 

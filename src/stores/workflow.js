@@ -10,7 +10,7 @@ import defu from 'defu';
 import deepmerge from 'lodash.merge';
 import { nanoid } from 'nanoid';
 import { defineStore } from 'pinia';
-import browser from 'webextension-polyfill';
+import browser from '@/lib/browser-compat';
 import { useUserStore } from './user';
 
 const defaultWorkflow = (data = null, options = {}) => {

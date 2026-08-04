@@ -56,7 +56,7 @@
   </ui-card>
 </template>
 <script setup>
-import browser from 'webextension-polyfill';
+import browser from '@/lib/browser-compat';
 import { useI18n } from 'vue-i18n';
 import { getBlocks } from '@/utils/getSharedData';
 import RendererWorkflowService from '@/service/renderer/RendererWorkflowService';

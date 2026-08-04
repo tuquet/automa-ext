@@ -72,7 +72,7 @@ import { useStore } from '@/stores/main';
 import { openGDrivePickerPopup } from '@/utils/openGDriveFilePicker';
 import { useI18n } from 'vue-i18n';
 import { useToast } from 'vue-toastification';
-import browser from 'webextension-polyfill';
+import browser from '@/lib/browser-compat';
 import EditGoogleSheets from './EditGoogleSheets.vue';
 
 const props = defineProps({

@@ -1,5 +1,5 @@
 import { defineStore } from 'pinia';
-import browser from 'webextension-polyfill';
+import browser from '@/lib/browser-compat';
 import lodashDeepmerge from 'lodash.merge';
 import { cleanWorkflowTriggers } from '@/utils/workflowTrigger';
 

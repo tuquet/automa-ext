@@ -1,4 +1,4 @@
-import browser from 'webextension-polyfill';
+import browser from '@/lib/browser-compat';
 
 const checkPermissions = (permissions) =>
   browser.permissions.contains({ permissions });

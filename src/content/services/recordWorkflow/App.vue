@@ -196,7 +196,7 @@
 </template>
 <script setup>
 import { ref, reactive, watch, onMounted, onBeforeUnmount } from 'vue';
-import browser from 'webextension-polyfill';
+import browser from '@/lib/browser-compat';
 import { toCamelCase } from '@/utils/helper';
 import { tasks } from '@/utils/shared';
 import findSelector from '@/lib/findSelector';

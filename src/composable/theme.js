@@ -1,5 +1,5 @@
 import { ref, onMounted } from 'vue';
-import browser from 'webextension-polyfill';
+import browser from '@/lib/browser-compat';
 
 const themes = [
   { name: 'Light', id: 'light' },

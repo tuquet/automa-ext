@@ -1,4 +1,4 @@
-import browser from 'webextension-polyfill';
+import browser from '@/lib/browser-compat';
 import { isXPath, debounce } from '@/utils/helper';
 import { sendMessage } from '@/utils/message';
 import FindElement from '@/utils/FindElement';
