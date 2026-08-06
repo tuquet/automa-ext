@@ -23,7 +23,7 @@ let storageRequestId = 0;
 if (vscodeApi) {
   window.addEventListener('message', (event) => {
     const message = event.data;
-    if (message.type === 'storage-get-response' || message.type === 'storage-set-response') {
+    if (message.type === 'storage-get-response' || message.type === 'storage-set-response' || message.type === 'runtime-message-response') {
       const resolve = pendingStorageRequests.get(message.id);
       if (resolve) {
         resolve(message.data || {});
@@ -42,10 +42,19 @@ const api = {
     id: 'vscode-webview',
     sendMessage: (message) => {
       return new Promise((resolve) => {
-        if (vscodeApi) {
-          vscodeApi.postMessage({ type: 'runtime-message', data: message });
+        if (!vscodeApi) return resolve();
+        
+        try {
+          const id = ++storageRequestId;
+          pendingStorageRequests.set(id, resolve);
+          
+          // Must stringify to avoid DataCloneError with Vue Reactivity Proxies
+          const serialized = JSON.parse(JSON.stringify(message));
+          vscodeApi.postMessage({ type: 'runtime-message', id, data: serialized });
+        } catch (e) {
+          console.error("Failed to serialize runtime message", e);
+          resolve();
         }
-        resolve();
       });
     },
     onMessage: dummyEvent,
