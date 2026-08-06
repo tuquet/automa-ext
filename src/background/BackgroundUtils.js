@@ -9,7 +9,7 @@ class BackgroundUtils {
 
     try {
       const [tab] = await browser.tabs.query({
-        url: browser.runtime.getURL('/newtab.html'),
+        url: browser.runtime.getURL('/newtab.html*'),
       });
 
       if (tab) {
