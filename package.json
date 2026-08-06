@@ -11,6 +11,7 @@
     "build:firefox": "cross-env BROWSER=firefox npm run build",
     "build:zip": "node utils/build-zip.js",
     "build:prod": "npm run build:prod-chrome && npm run build:prod-firefox",
+    "build:vscode": "cross-env NODE_ENV=production webpack --config webpack.vscode.config.js",
     "build:prod-chrome": "node utils/clean-build-cache.js && npm run build && npm run build:zip",
     "build:prod-firefox": "npm run build:firefox && cross-env BROWSER=firefox npm run build:zip",
     "dev": "node utils/webserver.js",
@@ -99,7 +100,7 @@
     "vue-toastification": "^2.0.0-rc.5",
     "vuedraggable": "^4.1.0",
     "vuex": "^4.0.2",
-    "webextension-polyfill": "^0.12.0",
+    "webextension-polyfill": "workspace:*",
     "xlsx": "https://cdn.sheetjs.com/xlsx-0.19.1/xlsx-0.19.1.tgz"
   },
   "devDependencies": {
