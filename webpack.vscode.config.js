@@ -11,8 +11,7 @@ const alias = {
   '@': path.resolve(__dirname, 'src/'),
   secrets: path.join(__dirname, 'secrets.blank.js'),
   '@business': path.resolve(__dirname, 'business/dev'),
-  // THE MAGIC: Swap out browser API with vscode API
-  'webextension-polyfill': path.resolve(__dirname, 'src/lib/vscode-compat.js'),
+  'webextension-polyfill': 'webextension-polyfill/vscode-compat.js',
 };
 
 const options = {

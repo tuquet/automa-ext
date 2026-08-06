@@ -15,7 +15,6 @@ const alias = {
   '@': path.resolve(__dirname, 'src/'),
   secrets: path.join(__dirname, 'secrets.blank.js'),
   '@business': path.resolve(__dirname, 'business/dev'),
-  'webextension-polyfill': path.resolve(__dirname, 'src/lib/browser-compat.js'),
 };
 
 // load the secrets
