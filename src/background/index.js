@@ -19,7 +19,11 @@ import { registerWorkflowTrigger } from '../utils/workflowTrigger';
 import BackgroundEventsListeners from './BackgroundEventsListeners';
 import BackgroundOffscreen from './BackgroundOffscreen';
 import BackgroundUtils from './BackgroundUtils';
+import BackgroundWorkflowUtils from './BackgroundWorkflowUtils';
 
+BackgroundOffscreen.instance.sendMessage('halo');
+
+browser.alarms.onAlarm.addListener(BackgroundEventsListeners.onAlarms);
 
 browser.commands.onCommand.addListener(BackgroundEventsListeners.onCommand);
 
