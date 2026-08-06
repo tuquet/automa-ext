@@ -1,3 +1,4 @@
+import './public-path';
 import { createApp } from 'vue';
 import { createHead } from '@vueuse/head';
 import App from './App.vue';

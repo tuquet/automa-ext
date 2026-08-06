@@ -111,12 +111,7 @@ class BackgroundEventsListeners {
     if (notificationId.startsWith('logs')) {
       const { 1: logId } = notificationId.split(':');
 
-      const [tab] = await browser.tabs.query({
-        url: browser.runtime.getURL('/newtab.html'),
-      });
-      if (!tab) await BackgroundUtils.openDashboard('');
-
-      await BackgroundUtils.sendMessageToDashboard('open-logs', { logId });
+      await BackgroundUtils.openDashboard(`/logs/${logId}`);
     }
   }
 

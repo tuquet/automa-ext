@@ -26,7 +26,7 @@ export default async function ({ data, id }) {
     options[key] = url;
   });
 
-  await BrowserAPIService.notifications.create(nanoid(), {
+  await BrowserAPIService.notifications.create(`logs:${this.id}:${nanoid()}`, {
     ...options,
     type: options.imageUrl ? 'image' : 'basic',
   });
