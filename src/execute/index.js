@@ -1,6 +1,6 @@
 import { parseJSON } from '@/utils/helper';
 import { sendMessage } from '@/utils/message';
-import Browser from '@/lib/browser-compat';
+import Browser from 'webextension-polyfill';
 
 function getWorkflowDetail() {
   let hash = window.location.hash.slice(1);

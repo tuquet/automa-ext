@@ -2,7 +2,7 @@
 import { IS_FIREFOX } from '@/common/utils/constant';
 import { sleep } from '@/utils/helper';
 import { MessageListener } from '@/utils/message';
-import Browser from '@/lib/browser-compat';
+import Browser from 'webextension-polyfill';
 
 const OFFSCREEN_URL = Browser.runtime.getURL('/offscreen.html');
 

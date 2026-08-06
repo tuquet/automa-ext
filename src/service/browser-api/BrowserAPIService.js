@@ -6,7 +6,7 @@ import {
   serializeFunctions,
 } from '@/utils/serialization';
 import objectPath from 'object-path';
-import Browser from '@/lib/browser-compat';
+import Browser from 'webextension-polyfill';
 import BrowserAPIEventHandler from './BrowserAPIEventHandler';
 import { browserAPIMap } from './browser-api-map';
 

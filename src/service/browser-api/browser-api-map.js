@@ -1,4 +1,4 @@
-import Browser from '@/lib/browser-compat';
+import Browser from 'webextension-polyfill';
 
 /** @type {{api: () => unknown, path: string; isEvent?: true}[]} */
 export const browserAPIMap = [

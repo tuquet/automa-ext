@@ -1,7 +1,7 @@
 import BrowserAPIEventHandler from '@/service/browser-api/BrowserAPIEventHandler';
 import { MessageListener } from '@/utils/message';
 import WorkflowManager from '@/workflowEngine/WorkflowManager';
-import Browser from '@/lib/browser-compat';
+import Browser from 'webextension-polyfill';
 
 const messageListener = new MessageListener('offscreen');
 Browser.runtime.onMessage.addListener(messageListener.listener);
