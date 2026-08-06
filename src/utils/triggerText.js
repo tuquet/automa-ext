@@ -1,4 +1,4 @@
-import browser from '@/lib/browser-compat';
+import browser from 'webextension-polyfill';
 import dayjs from '@/lib/dayjs';
 import { getReadableShortcut } from '@/composable/shortcut';
 

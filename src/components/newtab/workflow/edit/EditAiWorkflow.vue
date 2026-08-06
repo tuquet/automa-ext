@@ -172,7 +172,7 @@ import {
 } from 'vue';
 import { useRoute } from 'vue-router';
 import { useToast } from 'vue-toastification';
-import browser from '@/lib/browser-compat';
+import browser from 'webextension-polyfill';
 import InsertWorkflowData from './InsertWorkflowData.vue';
 
 const toast = useToast();

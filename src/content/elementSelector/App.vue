@@ -166,7 +166,7 @@ import {
   toRaw,
   watch,
 } from 'vue';
-import browser from '@/lib/browser-compat';
+import browser from 'webextension-polyfill';
 import { getElementRect } from '../utils';
 import getSelectorOptions from './getSelectorOptions';
 

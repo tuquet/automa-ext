@@ -1,5 +1,5 @@
 import { nanoid } from 'nanoid';
-import browser from '@/lib/browser-compat';
+import browser from 'webextension-polyfill';
 import { debounce } from '@/utils/helper';
 import { recordPressedKey } from '@/utils/recordKeys';
 import findSelector, { finder } from '@/lib/findSelector';

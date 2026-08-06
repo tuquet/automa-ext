@@ -52,7 +52,7 @@ import { useGroupTooltip } from '@/composable/groupTooltip';
 import { useStore } from '@/stores/main';
 import { communities } from '@/utils/shared';
 import { onMounted } from 'vue';
-import browser from '@/lib/browser-compat';
+import browser from 'webextension-polyfill';
 
 useGroupTooltip();
 const store = useStore();

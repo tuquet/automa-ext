@@ -1,5 +1,5 @@
 import Mousetrap from 'mousetrap';
-import browser from '@/lib/browser-compat';
+import browser from 'webextension-polyfill';
 import { sendMessage } from '@/utils/message';
 
 Mousetrap.prototype.stopCallback = function () {

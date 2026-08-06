@@ -12,12 +12,7 @@ const alias = {
   secrets: path.join(__dirname, 'secrets.blank.js'),
   '@business': path.resolve(__dirname, 'business/dev'),
   // THE MAGIC: Swap out browser API with vscode API
-  './browser-compat.js$': path.resolve(__dirname, 'src/lib/vscode-compat.js'),
-  '../lib/browser-compat.js$': path.resolve(__dirname, 'src/lib/vscode-compat.js'),
-  '@/lib/browser-compat.js$': path.resolve(__dirname, 'src/lib/vscode-compat.js'),
-  './browser-compat': path.resolve(__dirname, 'src/lib/vscode-compat.js'),
-  '../lib/browser-compat': path.resolve(__dirname, 'src/lib/vscode-compat.js'),
-  '@/lib/browser-compat': path.resolve(__dirname, 'src/lib/vscode-compat.js'),
+  'webextension-polyfill': path.resolve(__dirname, 'src/lib/vscode-compat.js'),
 };
 
 const options = {
@@ -66,10 +61,6 @@ const options = {
     extensions: ['.js', '.vue', '.css'],
   },
   plugins: [
-    new webpack.NormalModuleReplacementPlugin(
-      /browser-compat/,
-      path.resolve(__dirname, 'src/lib/vscode-compat.js')
-    ),
     new MiniCssExtractPlugin(),
     new VueLoaderPlugin(),
     new webpack.DefinePlugin({ BROWSER_TYPE: JSON.stringify('vscode') }),

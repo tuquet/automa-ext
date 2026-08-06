@@ -1,4 +1,4 @@
-import browser from '@/lib/browser-compat';
+import browser from 'webextension-polyfill';
 
 const nameBuilder = (prefix, name) => (prefix ? `${prefix}--${name}` : name);
 const isFirefox = BROWSER_TYPE === 'firefox';

@@ -149,7 +149,7 @@
 <script setup>
 import { useI18n } from 'vue-i18n';
 import { useToast } from 'vue-toastification';
-// import browser from '@/lib/browser-compat';
+// import browser from 'webextension-polyfill';
 import { useHasPermissions } from '@/composable/hasPermissions';
 import { clearCache } from '@/utils/helper';
 

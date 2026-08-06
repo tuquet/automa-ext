@@ -162,7 +162,7 @@ import { computed, onMounted, reactive, shallowRef, watch } from 'vue';
 import { useI18n } from 'vue-i18n';
 import { useRoute, useRouter } from 'vue-router';
 import { useToast } from 'vue-toastification';
-import browser from '@/lib/browser-compat';
+import browser from 'webextension-polyfill';
 
 useGroupTooltip();
 

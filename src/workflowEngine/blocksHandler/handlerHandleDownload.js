@@ -1,7 +1,7 @@
 import BrowserAPIService from '@/service/browser-api/BrowserAPIService';
 import { sendMessageWithCallbacks } from '@/utils/callbackBridge';
 import { MessageListener } from '@/utils/message';
-import browser from '@/lib/browser-compat';
+import browser from 'webextension-polyfill';
 
 const DOWNLOADS_STORAGE_KEY = 'automa-rename-downloaded-files';
 

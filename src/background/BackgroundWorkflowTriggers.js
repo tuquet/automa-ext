@@ -1,4 +1,4 @@
-import browser from '@/lib/browser-compat';
+import browser from 'webextension-polyfill';
 import dayjs from 'dayjs';
 import { findTriggerBlock, parseJSON } from '@/utils/helper';
 import {

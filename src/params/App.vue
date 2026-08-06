@@ -131,7 +131,7 @@ import { parseJSON } from '@/utils/helper';
 import automa from '@business';
 import workflowParameters from '@business/parameters';
 import { computed, onMounted, ref } from 'vue';
-import browser from '@/lib/browser-compat';
+import browser from 'webextension-polyfill';
 
 const paramsList = {
   string: {

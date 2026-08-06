@@ -149,7 +149,7 @@ import cloneDeep from 'lodash.clonedeep';
 import { onMounted, reactive, watch } from 'vue';
 import { useI18n } from 'vue-i18n';
 import { useToast } from 'vue-toastification';
-import browser from '@/lib/browser-compat';
+import browser from 'webextension-polyfill';
 
 const props = defineProps({
   workflow: {

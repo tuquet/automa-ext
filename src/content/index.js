@@ -4,7 +4,7 @@ import { sendMessage } from '@/utils/message';
 import automa from '@business';
 import cloneDeep from 'lodash.clonedeep';
 import { nanoid } from 'nanoid';
-import browser from '@/lib/browser-compat';
+import browser from 'webextension-polyfill';
 import blocksHandler from './blocksHandler';
 import initCommandPalette from './commandPalette';
 import handleSelector, {

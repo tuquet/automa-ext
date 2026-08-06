@@ -84,7 +84,7 @@
 <script setup>
 import { ref, onMounted } from 'vue';
 import { useI18n } from 'vue-i18n';
-import browser from '@/lib/browser-compat';
+import browser from 'webextension-polyfill';
 
 const props = defineProps({
   data: {

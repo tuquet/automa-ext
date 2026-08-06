@@ -1,4 +1,4 @@
-import browser from '@/lib/browser-compat';
+import browser from 'webextension-polyfill';
 import initElementSelector from './main';
 import initRecordEvents from './recordEvents';
 import selectorFrameContext from '../../elementSelector/selectorFrameContext';

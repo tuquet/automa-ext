@@ -348,7 +348,7 @@ import { computed, reactive } from 'vue';
 import { useI18n } from 'vue-i18n';
 import { useRouter } from 'vue-router';
 import { useToast } from 'vue-toastification';
-import browser from '@/lib/browser-compat';
+import browser from 'webextension-polyfill';
 
 const props = defineProps({
   isDataChanged: {

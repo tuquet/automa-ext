@@ -1,4 +1,4 @@
-import browser from '@/lib/browser-compat';
+import browser from 'webextension-polyfill';
 
 export default async function (detail, save = true) {
   const { isRecording, recording } = await browser.storage.local.get([

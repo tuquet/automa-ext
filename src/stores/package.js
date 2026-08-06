@@ -1,6 +1,6 @@
 import { defineStore } from 'pinia';
 import { nanoid } from 'nanoid';
-import browser from '@/lib/browser-compat';
+import browser from 'webextension-polyfill';
 import { fetchApi } from '@/utils/api';
 
 const defaultPackage = {

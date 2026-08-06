@@ -6,7 +6,7 @@
 </template>
 <script setup>
 import { ref, onMounted } from 'vue';
-import browser from '@/lib/browser-compat';
+import browser from 'webextension-polyfill';
 import { useStore } from '@/stores/main';
 import { sendMessage } from '@/utils/message';
 import { useWorkflowStore } from '@/stores/workflow';

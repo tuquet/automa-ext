@@ -1,4 +1,4 @@
-import browser from '@/lib/browser-compat';
+import browser from 'webextension-polyfill';
 import { initElementSelector } from '@/newtab/utils/elementSelector';
 import dayjs from 'dayjs';
 import dbStorage from '@/db/storage';

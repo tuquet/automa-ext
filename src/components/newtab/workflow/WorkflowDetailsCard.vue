@@ -80,7 +80,7 @@
 <script setup>
 import { computed, ref, onMounted, watch, toRaw } from 'vue';
 import { useI18n } from 'vue-i18n';
-import browser from '@/lib/browser-compat';
+import browser from 'webextension-polyfill';
 import { useShortcut } from '@/composable/shortcut';
 import { categories } from '@/utils/shared';
 import { getBlocks } from '@/utils/getSharedData';

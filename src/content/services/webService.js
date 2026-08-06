@@ -3,7 +3,7 @@ import { sendMessage } from '@/utils/message';
 import { openDB } from 'idb';
 import deepmerge from 'lodash.merge';
 import { nanoid } from 'nanoid';
-import browser from '@/lib/browser-compat';
+import browser from 'webextension-polyfill';
 
 function initWebListener() {
   const listeners = {};

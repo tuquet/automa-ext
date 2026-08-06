@@ -1,4 +1,4 @@
-import browser from '@/lib/browser-compat';
+import browser from 'webextension-polyfill';
 
 const validateUrl = (str) => str?.startsWith('http');
 const isMV2 = browser.runtime.getManifest().manifest_version === 2;

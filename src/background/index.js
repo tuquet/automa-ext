@@ -14,7 +14,7 @@ import { MessageListener } from '@/utils/message';
 import { automaRefDataStr } from '@/workflowEngine/helper';
 
 import automa from '@business';
-import browser from '@/lib/browser-compat';
+import browser from 'webextension-polyfill';
 import { registerWorkflowTrigger } from '../utils/workflowTrigger';
 import BackgroundEventsListeners from './BackgroundEventsListeners';
 import BackgroundOffscreen from './BackgroundOffscreen';
